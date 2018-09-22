@@ -1,3 +1,23 @@
+html {
+  --article-bg-color: #808080;
+  .navigation{ grid-area: nav; }
+  .big-features{grid-area: b;}
+  .small-features{grid-area:sm;}
+  .top-articles{grid-area: top-a;}
+
+}
+
 h1 {
-  color: red;
+  color: black;
+}
+
+
+
+article {
+  display: grid;
+  grid-template-areas:
+          'nav nav nav nav '
+  background-color: var(--article-bg-color);
+  grid-column: 3;
+  grid-column-gap: 10rem;
 }
