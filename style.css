@@ -13,11 +13,20 @@ h1 {
 
 
 
-article {
+main {
   display: grid;
-  grid-template-areas:
-          'nav nav nav nav '
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
   background-color: var(--article-bg-color);
   grid-column: 3;
-  grid-column-gap: 10rem;
+}
+
+div {
+  background-color: red;
+}
+
+.navigation{
+  grid-row-start: 1;
+
+
 }
