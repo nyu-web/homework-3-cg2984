@@ -1,0 +1,4 @@
+I used flex boxes for the navigation and the top articles because it is easier to format when the object
+is only one line. For the main articles I used grid layout because it is easier to move around the different
+squares than with the flex. I found that when trying to use flex for the smaller articles, I had difficulty
+getting them to line up properly. 
