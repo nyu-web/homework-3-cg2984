@@ -1,32 +1,161 @@
 html {
-  --article-bg-color: #808080;
-  .navigation{ grid-area: nav; }
-  .big-features{grid-area: b;}
-  .small-features{grid-area:sm;}
-  .top-articles{grid-area: top-a;}
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: start;
 }
 
 h1 {
   color: black;
+  background-color:white;
+  grid-column: 1/2;
+  justify-content: center;
 }
 
+nav {
+  display:flex;
+}
 
+nav > h1{
+  margin: 30px;
+  justify-content: right;
+}
+
+ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li{
+  text-decoration: none;
+  padding:10px;
+  list-style: none;
+}
 
 main {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
-  background-color: var(--article-bg-color);
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+}
+
+main > div {
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+}
+
+.t-one{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.t-two{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.t-three{
   grid-column: 3;
+  grid-row: 1;
 }
 
-div {
-  background-color: red;
+.t-four{
+  grid-column: 4;
+  grid-row: 1;
 }
 
-.navigation{
-  grid-row-start: 1;
+.t-five{
+  grid-column: 5;
+  grid-row: 1;
+}
 
+.one{
+  grid-column: 4;
+  grid-row: 2;
 
 }
+
+.two{
+  grid-column: 5;
+  grid-row: 2;
+}
+
+.three{
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.four{
+  grid-column: 5;
+  grid-row: 3;
+}
+
+.five {
+  grid-column: 1;
+  grid-row: 2/3;
+}
+
+
+/*
+.top-article{
+  /*
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto;
+  grid-row: 1;
+  grid-column: 1/6;
+  display: flex;
+  background-color:white;
+  justify-content:space-around;
+  align-items: center;
+  border-top: 7px black double;
+  border-bottom: 7px black double;
+}
+
+.top-article > img {
+  margin: 10px 50px 10px 10px;
+  border-right: 2px grey solid;
+}
+*/
+
+/*
+.main-features{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-auto-flow: dense;
+  background-color: orange;
+}
+
+.one{
+  grid-column:2;
+  grid-row:1;
+  margin-top: 20px;
+}
+
+.two{
+  grid-column:3;
+  grid-row:1;
+  margin-top: 20px;
+}
+
+.three{
+  grid-column:2;
+  grid-row:2;
+}
+
+.four{
+  grid-column:3;
+  grid-row:2;
+}
+
+/*.five {
+  padding: 10px 0 10px 10px;
+  margin: 10px 0 10px 10px;
+  grid-column: 1;
+  grid-row: 1/2;
+  width: 650px;
+}*/
+
